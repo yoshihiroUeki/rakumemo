@@ -12,9 +12,14 @@
     <div class="container">
         <h1>My BBS</h1>
         <ul>
-            @foreach ($posts as $post)
-            <li>{{$post}}</li>
-            @endforeach
+            @forelse ($posts as $index => $post)
+            <li>
+                <a href="/posts/{{ $index }}">
+                {{$post}}
+            </li>
+            @empty
+            <li>NO posts yet</li>
+            @endforelse
         </ul>
     </div>
 </body>
