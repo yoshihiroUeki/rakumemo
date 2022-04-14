@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             // $table->string('title')->nullable();
             $table->text('body');
-            $table->timestamps();
+            $table->timestamps(); //created_at, updated_at
         });
     }
 
