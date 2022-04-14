@@ -15,12 +15,12 @@ class PostController extends Controller
     public function index()
     {
         return view('index')
-        ->with(['posts' => $this->posts]);
+            ->with(['posts' => $this->posts]);
     }
 
     public function show($id)
     {
-        return view('show')
-        ->with(['port' => $this->posts[$id]]);
+        return view('posts.show')
+            ->with(['post' => $this->posts[$id]]);
     }
 }
