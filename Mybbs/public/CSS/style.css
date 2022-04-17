@@ -1,23 +1,30 @@
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 480px;
     margin: 40px auto;
-
 }
 
-
 h1 {
- border-bottom: 1px solid;
- font-size: 18px;
- margin: 16px 0;
- padding-bottom: 8px;
- display: flex;
- align-items: center;
+    border-bottom: 1px solid;
+    font-size: 18px;
+    margin: 16px 0;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 h1 > a {
     font-size: 16px;
     font-weight: normal;
     margin-left: auto;
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 40px;
 }
 
 li {
@@ -49,6 +56,10 @@ button {
     font-size: 14px;
 }
 
+.form-group {
+    margin-bottom: 16px;
+}
+
 .form-button {
     text-align: right;
 }
@@ -58,3 +69,21 @@ button {
     font-size: 14px;
     margin-top: 8px;
 }
+
+.btn {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: normal;
+    color: #15c;
+    cursor: pointer;
+    vertical-align: 1px;
+}
+
+.comment-form {
+    display: flex;
+  }
+
+  .comment-form > button{
+    margin-left: 8px;
+  }
