@@ -60,7 +60,7 @@
                 form.addEventListener('submit', e => {
                     e.preventDefault();
 
-                    if(!confirm('Sure to delete?')) {
+                    if (!confirm('Sure to delete?')) {
                         return;
                     }
 
